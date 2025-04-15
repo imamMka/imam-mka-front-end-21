@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#4D46A5] bg-cover font-sans" style="background-image: url('/img/Standard.png')">
+
+  <div class="w-[640px] h-[726px] bg-white rounded-[20px] mx-auto my-[100px] p-3 flex flex-col items-center justify-center">
+
+    <!-- Plan Buttons -->
+    <div class="w-[600px] p-3 rounded-[20px] border border-gray-400 flex justify-center items-center">
+      <div id="basicBtn" class="w-[200px] h-[100px] p-1 flex justify-center items-center rounded-[20px] hover:bg-lime-400 cursor-pointer">
+        <h2>Basic</h2>
+      </div>
+      <div id="standardBtn" class="w-[200px] h-[100px] p-1 flex justify-center items-center rounded-[20px] hover:bg-lime-400 cursor-pointer">
+        <h2>Standard</h2>
+      </div>
+      <div id="premiumBtn" class="w-[200px] h-[100px] p-1 flex justify-center items-center rounded-[20px] hover:bg-lime-400 cursor-pointer">
+        <h2>Premium</h2>
+      </div>
+    </div>
+
+    <!-- Card Content -->
+    <div class="flex flex-col w-[600px] p-16 gap-8">
+
+      <div class="flex flex-col gap-3 mb-2">
+        <p id="planLabel" class="capitalize text-gray-700 text-sm">standard</p>
+        <div class="flex justify-between items-center">
+          <h3 id="planTitle" class="text-[22px] font-semibold">Icon Sets</h3>
+          <h3 id="planPrice" class="text-[22px] font-semibold">$120</h3>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-8 mt-8">
+        <p id="planDescription" class="font-semibold leading-snug">
+          Up to 100 creative & professional icons + two <br />
+          color versions/themes per month
+        </p>
+
+        <div id="feature1" class="flex items-center gap-2">
+          <img src="ceklis.png" alt="Check icon" />
+          <p>Included source files</p>
+        </div>
+
+        <div id="feature2" class="flex items-center gap-2">
+          <img src="ceklis.png" alt="Cross icon" />
+          <p>Converted to responsive components</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add to Cart Button -->
+    <button class="mt-5 w-[420px] h-[72px] bg-[#4D46A5] text-white rounded-[36px] cursor-pointer">
+      Add to cart
+    </button>
+
+    <!-- Notification -->
+    <div id="notifSuccess"
+      class="fixed top-5 right-5 bg-white text-black py-3 px-6 rounded-xl flex items-center gap-3 shadow-lg font-bold z-[999] opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out">
+      <img src="/-ceklis-vec.svg" alt="Check icon" />
+      <p>Added to cart</p>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
